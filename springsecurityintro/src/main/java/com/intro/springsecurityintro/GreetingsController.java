@@ -12,4 +12,14 @@ public class GreetingsController {
     public String hello() {
         return "Hello World!";
     }
+
+    @GetMapping("/welcome")
+    public String welcome() {
+        return "Welcome to Spring Security!";
+    }
+
+    @GetMapping("/goodbye")
+    public String goodbye() {
+        return "Goodbye!";
+    }
 }
